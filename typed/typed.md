@@ -75,7 +75,7 @@
     - `TYPE` tal que `T: TYPE` se, _e somente se_, `T` é um tipo
 
 > OBS: se possui subtipos e universo, então possui meta tipos:
->   - `X` é meta tipo se `X < TYPE`
+>   - `X` é meta tipo se `X <= TYPE`
 >   - `META: TYPE`, `X: META` se, e somente se, `X < TYPE`
 
 - dependentes
@@ -100,7 +100,7 @@
     - texto mapeado em texto `F: T(L1) -> T(L2)`
         
 - sistemas de tipos: 
-    - `F: L1=(Term1, Type1) -> L2=(Term2, Type2)`
+    - `F: A1=(Term1, Type1) -> A2=(Term2, Type2)`
     - termos levados em termos: `FTerm: Term1 -> Term2`
     - tipos levados em tipos: `FType: Type1 -> Type2`
     - preservando relações de determinação do tipo
@@ -114,7 +114,7 @@
 
 - linguagem formal `L=(A, G(A))` dotada de:
     - `Status` (representando possíveis status da validação)
-    - `eval: Textos -> Status` (representando o validador de textos)
+    - `eval: T(L) -> Status` (representando o validador de textos)
 
 - relação entre linguagens com validação:
     - relação entre linguagens formais `L1=(A1,G(A1)) -> L2=(A2,G(A2))`
@@ -244,7 +244,7 @@
 - admite meta tipos:
     - através de _metaclasses_
 
-- admite "versão fraca" de tipos:
+- admite "versão fraca" de subtipos:
     - `issubclass`: foco em _herança_
     - se `issubclass(X, Y) is True`, então, para todo `x` tal que `isinstance(x, X) is True`, tem-se `isinstance(x, Y) is True`
     - recíproca é falsa
@@ -290,6 +290,15 @@
 
 - permite ao usuário construir seu próprio sistema de tipos
 
+> `repo`: `github.com/ximenesyuri/typed`
+> `docs`: `ximenesyuri.com/libs/typed`
+
 ## sistema de tipos
+
+```
+          creates              extends              creates
+UNIVERSE ────────>  UNIVERSAL ─────────> ABSTRACT  ─────────> TYPES
+                    METATYPES            METATYPES
+```
 
 
