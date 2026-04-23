@@ -1,7 +1,7 @@
----
-title:  você realmente precisa de `venvs`?
-author: Yuri Ximenes
----
+----------------------------------------------------
+- title:  você realmente precisa de `venvs`?
+- author: Yuri Ximenes `CSYS:TLY`
+----------------------------------------------------
 
 # INTRODUÇÃO
 
@@ -37,7 +37,7 @@ author: Yuri Ximenes
 3. environment:
     - o que é um _environment_?
     - como construir _environments_?
-    - o que é um _standard environment_?
+    - o que é um _prefixed environment_?
     - o que é um _system environment_?
     - o que é um _virtual environment_ (`venv`)?
     - quando (não) usar um _virtual environment_?
@@ -215,7 +215,7 @@ __DEFINIÇÃO.__
 ## 2.1 DISTRIBUIÇÕES: MÓDULOS 
 
 - um _módulo Python_ é:
-    - um arquivo `module.py`
+    - um arquivo de _texto_  `module.py`
         - no _file system_ de uma _máquina_
         - cujo conteúdo é um _source code_ de Python
 
@@ -248,7 +248,7 @@ __PERGUNTA.__
     - adicionando a linha `import some_file`
 
 - diz que `some_file` é:
-    - _importável em_ `module.py` (com respeito à `python`, se:
+    - _importável em_ `module.py` (com respeito à `python`), se:
         - o arquivo de texto `new_module.py` é:
             - um módulo Python _válido_ em `python`.
 
@@ -277,7 +277,7 @@ __PERGUNTA.__
 ----------------------------------------------------------
 __FATO.__
 ----------------------------------------------------------
-- se `dirs/other_module.py` é qualquer outro:
+- se `dir/other_module.py` é qualquer outro:
     - módulo Python _válido_ em `python`
     - cujo diretório é `dir/`
 - então:
@@ -302,7 +302,7 @@ __CONCLUSÃO.__
     - determinados em _tempo de execução_
     - tais que:
         - uma biblioteca `lib` é importável em `module_py`
-        - se, e somente se:
+        - somente se:
             - `lib` está na raiz de algum diretório de `IMPORTABLES(module.py)`.
 
 - O __FATO__ anterior significa que:
@@ -436,7 +436,7 @@ dir/
 # in module.py
 import lib1, lib2, ...
 
-# in subir/other_module.py
+# in subdir/other_module.py
 import lib1, lib2, ...
 ...
 
@@ -577,9 +577,7 @@ __OBSERVAÇÃO.__
 
 ## 3.8 ENVIRONMENT: SYMLINKS
 
-- na abordagem anterior:
-    - o
-
+- ...
 
 ## 3.9 ENVIRONMENT: SYSTEM ENVIRONMENTS
 
