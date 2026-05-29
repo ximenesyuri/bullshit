@@ -1,0 +1,12 @@
+02/06: linguagens formais: visão geral
+    - linguagens formais e sistemas dedutivos
+    - consistência e completude
+    - computabilidade e modelos computacionais
+    - problemas computacionais
+    - teoremas limitantes
+16/06: sistemas de tipos: visão geral
+    - teoria dos conjuntos e o paradoxo de Russell
+    - tipos e o paradoxo de Giraud
+    - universos
+    - Curry-Howard
+30/06: linguagens de programação: visão geral
