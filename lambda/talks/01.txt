@@ -47,3 +47,10 @@
                 - hipótese Church-Turing
         - Teoremas de Incompletude de Gödel:
             - se "verdades absolutas" e as "regras pré-definidas" são suficientes pra construir aritmética (números naturais com operações básicas)
+
+
+TAREFA: leiam no wikipedia sobre
+    - linguagens formais
+    - computabilidade
+    - teoremas de incompletude de Gödel
+    - problema da parada
