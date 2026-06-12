@@ -11,3 +11,6 @@
 
 4. Types and Programming Languages
     - Benjamin Pierce
+
+5. Homotopy Type Theory: Univalent Foundations of Mathematics
+    - Institute for Advanced Study
